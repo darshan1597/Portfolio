@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Darshan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Darshan</h1>
+        <p>Web Developer | Hackathon Winner | Problem Solver</p>
+        <p>Hi, I’m a passionate web developer who turns ideas into functional, high-performing websites.</p>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>🚀 Featured Work</h2>
+
+        <div class="project-card">
+            <h3>🏆 2nd Place – National Level Web Development Hackathon</h3>
+            <p>Built a fully functional platform in just 24 hours, competing with 100+ teams while being solo nationwide.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP/MySQL</p>
+            <a href="#" class="btn" onclick="openModal('hackathonCert')">View Achievement</a>
+        </div>
+
+        <!-- Modal -->
+        <div id="hackathonCert" class="modal">
+            <span class="close" onclick="closeModal('hackathonCert')">&times;</span>
+            <img class="modal-content" src="Darshan.png" alt="Hackathon Certificate">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="https://github.com/darshan1597/Farming-Management" class="btn" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>💻 College Conferenece Website Development</h3>
+            <p>Designed & developed a responsive, mobile-friendly website for my college, improving accessibility for National Conferenece.</p>
+            <a href="https://bmsce.ac.in/news2025/" class="btn" target="_blank">View Website</a>
+        </div>
+
+        <div class="project-card">
+            <h3>🌐 CRABIE Company Website</h3>
+            <p>Developed a professional eCommerce site for CRABIE, optimizing UI/UX and integrating secure payments.</p>
+            <a href="https://crabie.in/" class="btn" target="_blank">View Website</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>💡 Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>PHP, MySQL</li>
+            <li>Responsive Web Design</li>
+            <li>Git/GitHub</li>
+            <li>UI/UX Optimization</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>📬 Contact Me</h2>
+        <p>Email: <a href="mailto:your@email.com">darshan63660@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/darshan-b1651a230/" target="_blank">linkedin.com/in/Darshan</a></p>
+        <p>GitHub: <a href="https://github.com/darshan1597" target="_blank">github.com/Darshan</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Darshan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        // Close modal when clicking outside image
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName("modal");
+            for (let modal of modals) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
